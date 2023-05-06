@@ -1,8 +1,36 @@
 .head {
     text-align: center;
+    width: 80%;
+    border: solid 2px;
+    background-color: lightgray;
 }
 
 .inputs {
     text-align: center;
+    
 }
 
+
+body {
+    background-color: bisque;
+}
+
+table {
+    width: 80%;
+    text-align: center;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: lightgray;
+    height: 1.5em;
+  }
+
+  th, td {
+    padding: .5em;
+    min-width: 1.5em;
+    text-align: center;
+  }
+   
+  
