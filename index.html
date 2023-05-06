@@ -14,43 +14,65 @@
   <h1>Salary Calculator</h1> 
    </div>
 
-  <h2 class=" headers" Add Employee</h2>
+  <h2 class="header" Add Employee</h2>
 
+ <div class="inputs">
 <form>
 
  <input
     type="text"
-    placeholder="First Name" id="sub"
-    id="first-name-input"
+    placeholder="First Name" 
+    id="submitFirstname"
+    class="inputs"
     >
 
 <input
    type="text"
    placeholder="Last Name"
-   id="last-name-input"
+   id="submitLastname"
+   class="inputs"
    >
 
 <input
-  type="text"
+  type="number"
   placeholder="ID"
-  id="id-input"
+  id="submitId"
   >
 
 <input
   type="text"
   placeholder="Job Title"
-  id="job-title-input"
+  id="submitJobtitle"
+  class="inputs"
   >
   
 <input
-  type="text"
+  type="number"
   placeholder="Annual Salary"
-  id="annual-salary-input"
+  id="submitAnnualSalary"
+  class="inputs"
   >
+  <button id="submitButton">submit</button>
+</div>
 
-  </form>
+</form>
+<div class="h3"></div>
+<h3> Employees</h3>
+</div>
+<table>
+        <thead>
+          <tbody>
+          <tr>
+            <th>First Name</th>
+            <br>
+            <th>Last Name</th>
+            <br>
+            <th>ID</th>
+            <th>Job Title</th>
+            <th>Annual Salary</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+      </tbody>
   </body>
-</body>
-    
-</body>
 </html>
