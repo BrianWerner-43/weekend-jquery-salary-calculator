@@ -43,11 +43,34 @@ console.log('append employee info to the DOM');
 $('input').val('');
   }
 
-  // crerate a function to calculate monthly cost
+  // crerate a function to calculate employee annual salary
+  function annualSalary() {
+    let annualSalary = 0;
+    for (let i=0; i < newEmployeeInfo.length; i++) {
+      annualSalary += newEmployeeInfo[i].annualSalary
+    
+    }
+  }
+console.log('Total annual salary')
 
+// creating 2 variables to calculate annual salary/months
+// to get monthly cost
+let months = 12;
+let monthlyCost = annualSalary / 12;
 
-  
-  function removeInfo(){
+function totalCost(monthlyCost) {
+
+annualSalary += Math.round(annualSalary / 12);
+  if ( monthlyCost < 20000) {
+    $('#totalMonthly').css( background-color, 'red');
+  }else if (monthlyCost > 20000) {
+    $('#totalMonthly').css( background-color, 'gray');
+  }
+};
+
+ //console.log('should turn red',totalCost);
+
+function removeInfo(){
     console.log('deleted')
     $(this).parent().parent().remove();
 

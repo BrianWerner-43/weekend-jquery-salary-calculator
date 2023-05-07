@@ -1,9 +1,9 @@
 # Project Name
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+jQuery salary calculator
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
+Created a salary calculator that can track monthly cost, buy entering in annual salaries, it can let you know if you costs exceeds $20,000. This is a great way to adjust budgets accordingly to maximize profits.
 
 Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
