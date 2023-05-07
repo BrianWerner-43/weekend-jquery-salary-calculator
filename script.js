@@ -7,33 +7,52 @@ function onReady() {
 // Put in button clicks for the submit & delete also put in an event 
 //for calculating  total monthly salary
 
-  $('#submit-button').on('click', employeeInfo);
+  $('#submit-button').on('click', newEmployee);
   $('tbody').on('click', '.deleteButton', removeInfo);
-  //$('#totalMonthly').text(totalMonthlySalary);
+ // $('#monthlyCost').text(annualSalary);
 }
 
-function newEmployee() {
+function newEmployee(event) {
+  console.log('it clicked!');
   let newEmployee = {
-    firstName: $('#submitFirstname').val(),
+   firstName: $('#submitFirstname').val(),
     lastName: $('#submitLastname').val(),
     iD: $('#submitId').val(),
-    jobTitle: $('#submitJobTitle').val(),
+    jobTitle: $('#submitJobtitle').val(),
     annualSalary: $('#submitAnnualSalary').val()
   }
-};
-// Setting up to push employee info into the array
-newEmployeeInfo.push(newEmployee);
+  console.log(newEmployee);
 
-//     event.preventDefault();
-//     $('tbody').append(`
-//       <tr>
-//       <td>${submitFirstname}</td>
-//       <td>${submitLastname}</td>
-//       <td><button class="deleteButton">Delete</button></td>
-//       </tr>
-// `)
-// }
-function removeInfo() {
-  console.log('remove info')
+// pushed employee info into the array
+
+newEmployeeInfo.push(newEmployee);
+// My preventDefault won't append anything to the DOM
+console.log('New employee info');
+    event.preventDefault() //Console says it can't read prperties
+    $('tbody').append(`
+      <tr>
+      <td>${newEmployee.firstName}</td>
+      <td>${newEmployee.lastName}</td>
+      <td>${newEmployee.iD}</td>
+      <td>${newEmployee.jobTitle}</td>
+      <td>${newEmployee.annualSalary}</td>
+      <td><button class="deleteButton">Delete</button></td>
+      </tr>
+`)
+console.log('append employee info to the DOM');
+$('input').val('');
+  }
+
+  // crerate a function to calculate monthly cost
+
+
+  
+  function removeInfo(){
+    console.log('deleted')
+    $(this).parent().parent().remove();
+
+}
+function newEmployee1() {
+  console.log('working?')
   $(this).parent().parent().remove();
 }
