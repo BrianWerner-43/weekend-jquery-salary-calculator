@@ -1,10 +1,10 @@
 $(document).ready(onReady);
+// variables for the annual and monthly salaries.
 let salary = 0;
 let totalSalary = 0;
 
-// created an empty array to push new employee info in
+// created an empty array to push new employee info into.
 let newEmployeeInfo = [];
-// let currentAnnualCost = 0;
 
 function onReady() {
 
@@ -30,14 +30,12 @@ function newEmployee(event) {
     annualSalary: $('#submitAnnualSalary').val()
   
   }
-  
-  console.log(newEmployee);
+   console.log(newEmployee);
 
 
+   newEmployeeInfo.push(newEmployee);
 
-newEmployeeInfo.push(newEmployee);
-
-// Got it on the DOM
+// the append function to appear on the DOM.
 console.log('New employee info');
 
     
